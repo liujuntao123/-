@@ -1,0 +1,39 @@
+.tip{
+  color:#aaa;
+  font-size:12px;
+}
+.normal_title{
+  font-size:16px;
+  margin:10rpx 20rpx;
+  font-weight: bold;
+}
+.item{
+ position:absolute;
+ border:1px solid black;
+ font-size:13px;
+ /* padding:7px 0px; */
+ width:210rpx;
+ height: 210rpx;
+ line-height: 210rpx;
+ text-align:center;
+ box-sizing: border-box;
+ /* border-radius:90px; */
+}
+.item_container{
+  height:100vh;
+  /* border:1px solid black; */
+  position:relative;
+}
+
+.delete-btn{
+  position: absolute;
+  display: block;
+  right: -20rpx;
+  top: -20rpx;
+  background: #f00;
+  border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+}

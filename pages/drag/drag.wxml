@@ -1,0 +1,10 @@
+<view bindtap="tapAll">
+   <text class='normal_title'>拖动排序</text>
+    <view class='item_container'>
+    <view wx:for='{{all_list}}' class="item {{index==current?'moving':'normal'}}"  style="left:{{(index==current?move_x:item.left)*2}}rpx;top:{{(index==current?move_y:item.top)*2}}rpx" bindtouchmove="move" bindtouchstart="movestart" bindtouchend="moveend" bindlongpress="longpress" data-index="{{index}}">
+      <text bindtap="handleDelete" data-index="{{index}}" class="delete-btn" wx:if="{{index==currentDelete}}">×</text>
+    {{item.text}}
+      
+    </view>
+   </view> 
+</view>
